@@ -1,0 +1,16 @@
+# print funksiyasi kiritilgan suzni terminalga chiqaradi
+
+
+
+print( "Hello World")
+print("Hello world")
+a=4698
+b=9865
+c=5438
+d=a*b*c
+print(d)
+# ** sonning kvadratini hisoblash uchun islatiladi
+a=55
+b=78
+c=a+b**3
+print (c)
