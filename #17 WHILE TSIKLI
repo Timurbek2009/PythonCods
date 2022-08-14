@@ -1,0 +1,29 @@
+# W H I L E tsikli
+
+
+#input()
+
+ism = input("ismingiz nima? ")
+savol = f"salom, {ism.title()}. Yoshingiz nechchida? "
+yosh = input(savol)
+print('yoshingiz:', yosh)
+print('ismingiz:', ism)
+
+print(type(yosh))
+
+son = 1
+while son<5:
+    print(son, end=' ')
+    son = son +1
+print('dastur tugadi')
+
+#while and input
+
+print("kiritilgan sonning kvadratini qaytaruvchi dastur. ")
+savol = "istalgan son kiriting"
+savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+qiymat = ''
+while qiymat != 'exit':
+    qiymat = input(savol)
+    if qiymat != 'exit':
+        print(float(qiymat)**2)
