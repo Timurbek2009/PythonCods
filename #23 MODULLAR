@@ -1,0 +1,27 @@
+# M O D U L L A R
+
+from traceback import print_list
+
+
+def avto_info(kompaniya, model, rangi, korobka, yili, narhi=None):
+    avto = {'kompaniya': kompaniya,
+            'model': model,
+            'rang': rangi,
+            'korobka': korobka,
+            'yil': yili,
+            'narh': narhi}
+    return avto
+
+print("\saytimizdagi avtolar ro'yxatini shakllantiramiz.")
+avtolar = []
+while True:
+    print("\nQuyidagi ma'lumotlarni kiriting",end='')
+    kompaniya=input("ishlab chiqaruvchi: ")
+    model=input("modeli: ")
+    rangi=input("rangi: ")
+    korobka=input("korobka: ")
+    yili=input("yili: ")
+    narhi=input("narhi: ")
+
+    avtolar.append(avto_info(kompaniya, model, korobka, yili, rangi, narhi))
+    
