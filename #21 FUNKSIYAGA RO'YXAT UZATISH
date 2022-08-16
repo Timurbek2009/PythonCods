@@ -1,0 +1,13 @@
+# F U N K S I Y A ga ro'yxat uzatish
+
+def bahola(ismlar):
+    baholar = {}
+    while ismlar:
+        ism = ismlar.pop()
+        baho = input(f"Talaba {ism.title()}ning bahosini kiriting: ")
+        baholar[ism]=int(baho)
+    return baholar
+
+talabalar = ['timur', 'amir', 'abdurahmon' , 'javohir', 'sardor']
+baholar = bahola(talabalar)
+print(baholar)
