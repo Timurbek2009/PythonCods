@@ -1,0 +1,42 @@
+# MOSLASHUVCHAN funksiyalar
+
+
+def avto_info(kompaniya, model, rangi, korobka, yili, narhi=None):
+    avto = {'kompaniya': kompaniya,
+            'model': model,
+            'rang': rangi,
+            'korobka': korobka,
+            'yil': yili,
+            'narh': narhi}
+    return avto
+
+avto1 = avto_info('chevrolet', 'camaro', 'qora', 'avtomat', 2022, 80000)
+avto2 = avto_info('chevrolet', 'tracker', 'kulrang', 'avtomat', 2020)
+avtolar = [avto1, avto2]
+print('onlayn bozorda mavjud mashinalar: ')
+
+
+def oraliq(min,max):
+    sonlar = []
+    while min<max:
+        sonlar.append(min)
+        min +=1
+    return sonlar
+
+print(oraliq(0,10))
+print(oraliq(10,21))
+
+# *args and *kwargs
+
+def summa(*sonlar):
+    """kiritilgan sonlar yig'indisini hisoblaydigan funksiya"""
+    yigindi = 0
+    for son in sonlar:
+        yigindi += son
+    return yigindi
+
+print(summa(1,2))
+print(summa(1,2,3,4,5))
+print(summa(4,5,6,7))
+
+
