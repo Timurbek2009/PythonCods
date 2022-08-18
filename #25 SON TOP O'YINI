@@ -1,0 +1,21 @@
+# S O N  T O P 
+
+
+import random
+
+def sontop(x=10):
+    tasodifiy_son = random.randint(1,x)
+    print(f"men 1 dan {x} gacha son o'yladim. Topa olasizmi?")
+    
+    while True:
+        taxminlar += 1
+        taxmin = int(input(">>>"))
+        if taxmin<tasodifiy_son:
+            print("Xato. men o'ylagan son bundan kattaroq. yana harakat qiling: ")
+        elif taxmin>tasodifiy_son:
+            print("Xato. men o'ylagan son bundan kichikroq. yana harakat qiling: ")
+        else:
+            break
+    print("tabriklaymiz. {taxminlar} taxmin bilan topdingiz")
+print(sontop())
+
