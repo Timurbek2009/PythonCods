@@ -1,0 +1,24 @@
+# O B Y E K T L A R bilan ishlash
+
+
+x=10
+print(type(x))
+matn= "salom"
+print(type(matn))
+print(matn.upper())
+
+def salom():
+    print("assalomu alaykum")
+
+class Talaba:
+    def __inhit__(self,ism,familiya,tyil):
+        self.ism = ism
+        self.familiya = familiya
+        self.tyil = tyil
+    def tanishtir(self):
+        print(f"ismim {self.ism} {self.familiya}, tug'ilgan yilim {self.tyil}")
+    
+
+talaba1 = Talaba("Timurbek","Ataullayev",2009)
+talaba2 = Talaba("Odilbek","olimov",2009)
+talaba3 = Talaba("Abdurahmon","Ibodullayev",2009)
