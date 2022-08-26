@@ -1,0 +1,56 @@
+# F A Y L L A R bilan ishlash
+
+#file = open('pi.txt')
+#PI = file.read()
+#print(PI)
+#file.close()
+# agar faylimizni shu turushda qo'yib ochib, yopmasak unga zarar yetishi mumkin
+
+#with open('pi.txt') as file:
+    #pi = file.read()
+
+#print(pi)
+
+
+#pi = pi.rstrip()
+#pi = pi.replace('\n', '')
+#pi = float(pi)
+#print(pi)
+
+#filename = 'data/talabalar.txt'
+#with open(filename) as file:
+    #for line in file:
+        #print(line)
+
+#with open(filename) as file:
+    #talabalar = file.readlines()
+
+#print(talabalar)
+
+#talabalar = [talaba.rstrip() for talaba in talabalar]
+#print(talabalar)
+
+#faylnomi = 'new_file.txt'
+#ism = 'Ataullayv Timurbek'
+#tyil = 2009
+#with open(faylnomi, 'w') as fayl:
+    #fayl.write(ism)
+    #fayl.write(str(tyil))
+
+
+
+faylnomi = 'new_file.txt'
+ism = 'Ataullayv Timurbek'
+tyil = 2009
+with open(faylnomi, 'w') as fayl:
+    fayl.write(ism+'\n')
+    fayl.write(str(tyil)+'\n')
+
+
+faylnomi = 'new_file.txt'
+
+with open(faylnomi,'a') as fayl:
+    fayl.write('Ataullayev Timurbek\n')
+    fayl.write('2009')
+
+
