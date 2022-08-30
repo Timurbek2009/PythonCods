@@ -1,0 +1,30 @@
+# 1 - 100 gacha sonlar
+
+import random
+n=100
+numbers = list(range(1,n+1))
+x=numbers.pop(random.randint(1,n+1))
+print(x)
+
+numbers2 = list(range(1,n+1))
+print(sum(numbers2)-sum(numbers))
+
+import random
+n=100
+numbers = list(range(1,n+1))
+x=numbers.pop(random.randint(1,n+1))
+print(x)
+
+for i in range(1,n):
+    if i not in numbers:
+        print(i)
+        brreak
+
+import random
+n=100
+numbers = list(range(1,n+1))
+x=numbers.pop(random.randint(1,n+1))
+print(x)
+
+summa = n*(n+1)/2
+print(summa - sum(numbers))
