@@ -1,0 +1,35 @@
+# P Y T H O N tashqi kutubxonasi
+
+
+#PyPI.org
+
+from googletrans import Translator
+tarjimon = Translator()
+
+matn_uz = "Python - dunyodagi eng mashxur dasturlash tili"
+
+tarjima = tarjimon.translate(matn_uz)
+
+tarjima = tarjimon.translate(matn_uz)
+#original matn
+print(tarjima.origin)
+# tarjima
+print(tarjima.text)
+# original matn turi
+print(tarjima.src)
+
+
+tarjima_ru = tarjimon.translate(matn_uz, dest='ru')
+
+
+from googletrans import Translator
+tarjimon = Translator()
+
+msg = "tarjima uchun so'z kiriting (chiqib ketish uchun \"q\" deb yozing): "
+while True:
+    text = input(msg)
+    if text == "q":
+        break
+    else:
+        tarjima = tarjimon.translate(text, src='uz', dest='en')
+        print(tarjima.text)
